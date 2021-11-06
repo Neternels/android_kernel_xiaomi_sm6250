@@ -43,8 +43,7 @@ cdir() {
 ##----------Basic Informations, COMPULSORY--------------##
 
 # The defult directory where the kernel should be placed
-KERNEL_DIR=$HOME/Kernel
-cd $KERNEL_DIR
+KERNEL_DIR="$(pwd)"
 BASEDIR="$(basename "$KERNEL_DIR")"
 
 # The name of the Kernel, to name the ZIP
