@@ -215,8 +215,7 @@ img() {
 *Date*: \`$(date)\`
 *Zip Name*: \`${zipn}\`
 *Compiler*: \`${KBUILD_COMPILER_STRING}\`
-*Linker*: \`$("${KDIR}"/gcc64/bin/aarch64-elf-${LINKER} -v | head -n1 | sed 's/(compatible with [^)]*)//' |
-            head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')\`
+*Linker*: \`${LINKER}\`
 *Branch*: \`$(git rev-parse --abbrev-ref HEAD)\`
 *Last Commit*: [${COMMIT_HASH}](${REPO_URL}/commit/${COMMIT_HASH})
 "
